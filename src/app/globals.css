@@ -1,3 +1,68 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+	:root {
+		--color-neutral-50: theme("colors.gray.50");
+		--color-neutral-100: theme("colors.gray.100");
+		--color-neutral-200: theme("colors.gray.200");
+		--color-neutral-300: theme("colors.gray.300");
+		--color-neutral-400: theme("colors.gray.400");
+		--color-neutral-500: theme("colors.gray.500");
+		--color-neutral-600: theme("colors.gray.600");
+		--color-neutral-700: theme("colors.gray.700");
+		--color-neutral-800: theme("colors.gray.800");
+		--color-neutral-900: theme("colors.gray.900");
+	}
+}
+
+.theme-type-1 {
+	--neutralBgLight: #e6e6ea;
+	--neutralBgDark: #342e37;
+
+	--onNeutralBgLight: #342e37;
+	--onNeutralBgDark: #f4f4f8;
+
+	--primaryBgLight: #fed766;
+	--primaryBgDark: #3c91e6;
+
+	--onPrimaryBgLight: #009fb7;
+	--onPrimaryBgDark: #9fc2cc;
+
+	--primaryLight: #fe4a49;
+	--primaryDark: #f1ecce;
+}
+
+.theme-type-2 {
+	--neutralBgLight: #c6ccb2;
+	--neutralBgDark: #605f5e;
+
+	--onNeutralBgLight: #482c3d;
+	--onNeutralBgDark: #e2e2e2;
+
+	--primaryBgLight: #d7e8ba;
+	--primaryBgDark: #87255b;
+
+	--onPrimaryBgLight: #611c35;
+	--onPrimaryBgDark: #d1c8e1;
+
+	--primaryLight: #4da1a9;
+	--primaryDark: #b370b0;
+}
+
+.mode-light {
+	--neutralBg: var(--neutralBgLight);
+	--onNeutralBg: var(--onNeutralBgLight);
+	--primaryBg: var(--primaryBgLight);
+	--onPrimaryBg: var(--onPrimaryBgLight);
+	--primary: var(--primaryLight);
+}
+
+.mode-dark {
+	--neutralBg: var(--neutralBgDark);
+	--onNeutralBg: var(--onNeutralBgDark);
+	--primaryBg: var(--primaryBgDark);
+	--onPrimaryBg: var(--onPrimaryBgDark);
+	--primary: var(--primaryDark);
+}
