@@ -5,7 +5,7 @@ interface NavbarProps {}
 
 const Navbar: FC<NavbarProps> = (props) => {
 	return (
-		<header className="text-lg flex justify-between p-4 font-bold bg-primaryBg text-onPrimaryBg">
+		<header className="text-lg flex justify-around p-4 font-bold bg-primaryBg text-onPrimaryBg">
 			<div className="flex gap-6 items-center">
 				<Link href={"/"} className="text-primary text-xl">
 					<span className="text-onNeutralBg bg-primary px-2 py-1 rounded-full">
