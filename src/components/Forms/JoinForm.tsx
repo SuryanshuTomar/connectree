@@ -3,7 +3,7 @@
 import { zodResolver } from "@hookform/resolvers/zod";
 import { FC } from "react";
 import { SubmitHandler, useForm } from "react-hook-form";
-import Button from "../Buttons/CTA";
+import Button from "../Buttons/CTAButton";
 import { JoinFormType, joinFormSchema } from "@/utils/schemas";
 
 interface JoinFormProps {}

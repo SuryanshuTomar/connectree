@@ -5,7 +5,7 @@ import { FaPalette } from "react-icons/fa";
 import { RxCross2 } from "react-icons/rx";
 
 import { ThemeContext } from "@/context/themeContext";
-import ToggleSwitch from "../ToggleSwitch";
+import ToggleSwitch from "../ToggleSwitchButton";
 import { themeValues } from "@/utils/themeData";
 
 const ThemeMenuButton = () => {
