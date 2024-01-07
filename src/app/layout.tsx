@@ -3,6 +3,7 @@ import { Raleway } from "next/font/google";
 import "./globals.css";
 import { ThemeContextProviderComp } from "@/context/themeContext";
 import ThemeMenuButton from "@/components/Buttons/ThemeMenuButton";
+import Navbar from "@/components/Navbar";
 
 const raleway = Raleway({ subsets: ["latin"] });
 
@@ -17,12 +18,15 @@ export default function RootLayout({
 	children: React.ReactNode;
 }) {
 	return (
-		<html lang="en">
+		<html lang="en" className="no-scrollbar">
 			{/* <html lang="en" suppressHydrationWarning> */}
 			<body className={raleway.className}>
 				<ThemeContextProviderComp>
 					<ThemeMenuButton />
-					{children}
+					<main className="h-screen bg-neutralBg text-onNeutralBg ">
+						<Navbar />
+						{children}
+					</main>
 				</ThemeContextProviderComp>
 			</body>
 		</html>

@@ -11,6 +11,7 @@ import {
 	modeValues,
 	themeValues,
 } from "@/utils/themeData";
+import Loader from "@/components/Loader";
 
 type ThemeContextState = {
 	theme: UseStickyStateReturnType<ThemeValues>;
@@ -45,7 +46,9 @@ export const ThemeContextProviderComp: FC<{ children: ReactNode }> = ({
 		setLoading(false);
 	}, []);
 
-	return (
+	const content = loading ? (
+		<Loader />
+	) : (
 		<ThemeContextProvider
 			value={{ theme: themeState, mode: modeState, loading }}
 		>
@@ -54,4 +57,6 @@ export const ThemeContextProviderComp: FC<{ children: ReactNode }> = ({
 			<div className={`${themeState[0]} ${modeState[0]}`}>{children}</div>
 		</ThemeContextProvider>
 	);
+
+	return content;
 };
