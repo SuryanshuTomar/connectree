@@ -25,24 +25,24 @@
 
 .theme-type-1 {
 	--neutralBgLight: #e6e6ea;
-	--neutralBgDark: #342e37;
+	--neutralBgDark: #02040f;
 
 	--onNeutralBgLight: #342e37;
 	--onNeutralBgDark: #c1dff0;
 
 	--primaryBgLight: #fed766;
-	--primaryBgDark: #3c91e6;
+	--primaryBgDark: #002642;
 
 	--onPrimaryBgLight: #009fb7;
 	--onPrimaryBgDark: #9fc2cc;
 
 	--primaryLight: #fe4a49;
-	--primaryDark: #e5f77d;
+	--primaryDark: #840032;
 }
 
 .theme-type-2 {
 	--neutralBgLight: #c6ccb2;
-	--neutralBgDark: #605f5e;
+	--neutralBgDark: #110b11;
 
 	--onNeutralBgLight: #482c3d;
 	--onNeutralBgDark: #e2e2e2;
@@ -54,7 +54,7 @@
 	--onPrimaryBgDark: #d1c8e1;
 
 	--primaryLight: #4da1a9;
-	--primaryDark: #b370b0;
+	--primaryDark: #f39237;
 }
 
 .mode-light {
