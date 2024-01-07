@@ -5,7 +5,7 @@ import notFound from "@/../public/not-found.svg";
 
 const NotFound = () => {
 	return (
-		<div className="p-4 bg-neutralBg w-screen h-screen flex flex-col justify-center items-center text-onNeutralBg">
+		<div className="p-4 bg-neutralBg w-screen h-[90vh] flex flex-col justify-center items-center text-onNeutralBg">
 			<Image
 				className="p-4"
 				src={notFound}
