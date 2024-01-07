@@ -46,7 +46,7 @@ const ThemeMenuButton = () => {
 			<div className="fixed bottom-4 right-4 z-50" ref={menuRef}>
 				<button
 					id="themeBtn"
-					className={`bg-primaryBg shadow-primary text-primary p-4 rounded-full shadow relative`}
+					className={`bg-neutralBg shadow-primary text-primary p-4 rounded-full shadow relative`}
 					onClick={toggleMenu}
 				>
 					{menuOpen ? <RxCross2 /> : <FaPalette />}
@@ -57,14 +57,14 @@ const ThemeMenuButton = () => {
 					id="themeMenu"
 					className={`${
 						menuOpen ? "" : "hidden"
-					} absolute  bottom-14 right-0 p-2 bg-primaryBg rounded-md shadow shadow-primary text-onNeutralBg w-24 md:w-40`}
+					} absolute  bottom-14 right-0 p-2 bg-neutralBg rounded-md shadow shadow-primary text-onNeutralBg w-24 md:w-40`}
 				>
 					{/* Theme options */}
 					{themeValues.map((btn, idx) => (
 						<button
 							key={btn}
 							className={`w-full text-center p-2 rounded hover:bg-secondary text-xs md:text-lg ${
-								currentTheme === btn ? "text-onPrimaryBg" : ""
+								currentTheme === btn ? "text-primary" : ""
 							}`}
 							onClick={() => setCurrentTheme(btn)}
 						>
